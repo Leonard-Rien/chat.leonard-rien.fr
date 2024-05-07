@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1620bb5a.css",
+    "main.js": "/static/js/main.9114aaae.js",
+    "static/js/453.b4ae353a.chunk.js": "/static/js/453.b4ae353a.chunk.js",
+    "static/media/undertale-deltarune-text-font-extended.ttf": "/static/media/undertale-deltarune-text-font-extended.b772f8d58b24f654b79f.ttf",
+    "index.html": "/index.html",
+    "static/media/Hamburger_icon.svg": "/static/media/Hamburger_icon.b778cb1777612594612f.svg",
+    "main.1620bb5a.css.map": "/static/css/main.1620bb5a.css.map",
+    "main.9114aaae.js.map": "/static/js/main.9114aaae.js.map",
+    "453.b4ae353a.chunk.js.map": "/static/js/453.b4ae353a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1620bb5a.css",
+    "static/js/main.9114aaae.js"
+  ]
+}
