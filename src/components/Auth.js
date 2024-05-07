@@ -22,7 +22,7 @@ export const Auth = (props) => {
         <div className="root">
             <div className="header-auth">
                 <span className="contenu-header">
-                    <img src='./logo192.png' id="heartImage" className="coeur" alt="Coeur blanc" />
+                    <img src='./logo-chat192.png' id="heartImage" className="coeur" alt="Coeur blanc" />
                     <span className='Leonard-Rien'>Léonard Rien</span>
                     <span className='titre-header'>Messagerie</span>
                 </span>
