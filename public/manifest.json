@@ -1,15 +1,15 @@
 {
-  "short_name": "Léonard Rien",
-  "name": "Léonard-Rien",
+  "short_name": "Chat",
+  "name": "Chat | Léonard Rien",
   "icons": [
     {
-      "src": "logo128.png",
+      "src": "logo-chat512.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "maskable"
     },
       {
-      "src": "logo192.png",
+      "src": "logo-chat192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
