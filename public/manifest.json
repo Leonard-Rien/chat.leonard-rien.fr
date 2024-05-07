@@ -8,16 +8,23 @@
       "sizes": "512x512",
       "purpose": "maskable"
     },
-      {
+    {
       "src": "logo-chat192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     }
-      
   ],
   "start_url": ".",
   "display": "standalone",
+  "scope": "/",
+  "lang": "fr",
+  "description": "Une application de chat simple",
+  "orientation": "any",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
+  "background_color": "#ffffff",
+  "author": "Léonard Rien",
+  "version": "1.0",
+    }
+ 
+ 
