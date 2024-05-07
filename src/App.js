@@ -36,7 +36,7 @@ return(
 <div className="root">
             <div className="header-auth">
                 <span className="contenu-header">
-                    <img src='maskable_icon_x72.png' id="heartImage" className="coeur" alt="Coeur blanc" />
+                    <img src='logo192.png' id="heartImage" className="coeur" alt="Coeur blanc" />
                     <span className='Leonard-Rien'>Léonard Rien</span>
                     <span className='titre-header'>Messagerie</span>
                    
