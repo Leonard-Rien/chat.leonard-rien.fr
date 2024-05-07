@@ -30,7 +30,7 @@ const [messages, setMessages] = useState([])
         setMessages(messages);
       });
       return () => unsubscribe();
-   }, []);
+   }, [messagesRef, room]);
 
   const handleSubmit = async (e) =>{
   e.preventDefault();
@@ -65,7 +65,7 @@ return (
             </div>
           ) : (
             <div className="message-autre" key={message.id}>
-              <img className="photo-utilisateur" src={message.photo} alt="Photo utilisateur"></img>
+              <img className="photo-utilisateur" src={message.photo} alt="Photo de l'utilisateur"></img>
               <div className="message-texte">
                 <div className="nom-utilisateur">{message.utilisateur}</div>
                 <div className="message-contenu">{message.text}</div>
