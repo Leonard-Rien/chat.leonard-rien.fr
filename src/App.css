@@ -1,5 +1,57 @@
+@font-face {
+  font-family: 'undertale';
+  src: url(./components/styles/undertale-deltarune-text-font-extended.ttf);
+  font-display: swap;
+}
+
+
+#root {
+  width:100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--couleur_fond1);
+  color: var(--couleur_texte);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  --hauteur_header:min(60px,12vw);
+  --hauteur_message_et_bouton_envoyer: min(15vw,75px);
+  --largeur_bouton_envoyer: min(27vw,250px);
+  --rayon_bordure1: min(8vw,40px);
+  --rayon_bordure2: min(5vw,25px);
+  --padding1: min(20px,4vw);
+  --largeur_bloc:min(1000px,calc(100vw - (4* var(--padding1))));
+  font-size: min(4vw,25px);
+  --c1: #ff0000;
+--c2: #9900ff;
+  --couleur_texte: #ffffff;
+  --couleur_fond1: #000000;
+  --couleur_fond2: #111111;
+  --couleur_fond3: #222222;
+  --primary: #ffffff;
+  --secondary: #575757;
+  --accent: #11ff00;
+
+  transition: background-color 1s;
+}
+
+.root{
+  width:100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .App {
   text-align: center;
+}
+
+html{
+  background-color: #fff;
 }
 
 .App-logo {
@@ -12,6 +64,68 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.header-auth {
+  background-color: var(--couleur_fond1);
+ 
+  color: #fff; /* Couleur du texte */
+  font-size: 1.5em;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1000;
+  border-bottom: solid min(0.5vw, 1px) #222;
+  height: var(--hauteur_header);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 1s, color 1s, border 1s;
+    }
+
+
+    .Leonard-Rien{
+      font-family: 'undertale';
+      font-weight: 100;
+      font-size:min(2rem,4vw);
+      padding-right:min(200px,20vw);
+    }
+
+.titre-header{
+font-size:min(2rem,4vw);
+}
+
+
+    .contenu-header {
+      width:min(95vw,1200px);
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+  
+
+    .coeur{
+      height:min(55px,8vw);
+      width: min(55px,8vw);
+      margin: min(20px,2vw);
+    }
+
+
+    .bloc1 , .bloc2{
+      display: flex;
+      background-color: var(--couleur_fond2);
+      width:var(--largeur_bloc);
+      border-radius: var(--rayon_bordure1);
+      padding: var(--padding1);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: var(--padding1);
+      transition: background 1s, color 1s;
+    }
+.bloc1{
+    margin-top: calc(var(--hauteur_header) + var(--padding1));
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +149,73 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.auth{
+  
+}
+
+.bouton-SignIn{
+  background: linear-gradient(120deg, var(--c2), var(--c1));
+  border-radius: var(--rayon_bordure2);
+  border: #fff min(1vw, 2px) solid;
+  font-size: min(4vw,20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 100;
+  margin-left: var(--padding1);
+  padding:30px;
+  width: var(--largeur_bouton_envoyer);
+  height: 50px;
+}
+
+.input-nomSalon{
+  background-color: var(--couleur_fond3);
+  color: white;
+  border: none;
+  border-radius: var(--rayon_bordure2);
+  height:var(--hauteur_message_et_bouton_envoyer);
+  width: calc((var(--largeur_bloc) - var(--largeur_bouton_envoyer)) - 2*var(--padding1));
+  font-weight: 100;
+  color: var(--couleur_texte);
+  padding:0;
+  padding-left: var(--padding1);
+  font-size: min(4vw,25px);
+  transition: background 1s, color 1s;
+}
+
+.bouton-Entrer{
+
+  height:calc(var(--hauteur_message_et_bouton_envoyer));
+  width: var(--largeur_bouton_envoyer);
+  background: linear-gradient(135deg, var(--c1), var(--c2) 50%, var(--c1)) var(--x, 0)/ 200%;
+  background-position: 100% 0;
+  transition: background-position 0.5s ease;
+  border-radius: var(--rayon_bordure2);
+  border: #fff min(1vw, 3px) solid;
+  font-size: min(4vw,20px);
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 100;
+  margin-left: var(--padding1);
+  padding:0;
+}
+
+
+.IconeMenu{
+  background-image:url(./components/styles/Hamburger_icon.svg); 
+  background-size: cover;
+  text-align:end;
+  filter:invert(1);
+  border: none;
+  cursor: pointer;
+  float: right;
+  height:min(40px,6vw);
+  width: min(40px,6vw);
+  margin: min(20px,2vw);
 }

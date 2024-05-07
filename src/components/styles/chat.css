@@ -1,0 +1,160 @@
+.chat-app {
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 2px solid #252525;
+    background-color: #111;
+    border: 20px;
+  }
+
+  .root{
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  html{
+    background-color: #000;
+  }
+  .header {
+    margin-top:60px;
+    
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+.NomSalon{
+  margin-top:10px;
+}
+
+  .messages {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+    width:min(100vw,1000px);
+    height: 80%;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .message-autre{
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+ /*   margin-right: 100px;*/
+    margin-left:10px;
+    border: solid 1px #222;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #3a3a3a;
+    padding: 10px;
+    flex-direction: row;
+    padding-right: 10px;
+    color: #fff;
+  }
+
+  .message-soi{
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-start;
+    text-align: end;
+    margin-bottom: 10px;
+   /* margin-left: 100px;*/
+    margin-right:10px;
+    border: solid 1px #222;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #3a3a3a;
+    padding: 10px;
+    flex-direction: row;
+    max-width: 1000px;
+    padding-left: 10px;
+    color: #fff;
+  }
+  
+.message-texte{
+    max-width: 900px;
+    margin-left: 10px;
+    margin-right: 10px;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+}
+
+  .nom-utilisateur {
+    font-weight: bold;
+    color: #ffffff;
+    flex-grow: 1; /* Les divs vont remplir l'espace disponible */
+    height: 50%; /* Ajustez la hauteur selon vos besoins */
+  }
+  
+  .photo-utilisateur{
+    height: 50px;
+    border-radius: 25px;
+    align-self: flex-start;
+  }
+
+  .photo-utilisateur-soi{
+    height: 50px;
+    border-radius: 25px;
+    align-self: flex-start;
+  }
+
+  .message-contenu{
+    flex-grow: 1; /* Les divs vont remplir l'espace disponible */
+    height: 50%; /* Ajustez la hauteur selon vos besoins */
+  }
+
+
+  .new-message-form {
+    display: flex;
+    width: 100vw;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .new-message-input {
+    width:min(70vw,800px);
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #252525;
+    margin-right: 20px;
+    margin-left:10px;
+  }
+  
+  .send-button {
+    border: none;
+    outline: none;
+    background:linear-gradient(90deg,#9900ff,#f00);
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right:10px;
+  }
+
